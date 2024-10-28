@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Update Data</title>
+</head>
+<body>
+    <h1>Update Record</h1>
+ <form method="post" th:action="@{/updateCar}">
+ <input type="hidden" th:name="car_ID" th:value="${mobile.car_ID}">
+<table>
+<tr> 
+	<td> Brand </td>
+	<td><input type="text" name="Brand" placeholder="Enter car brand"> </td>
+</tr>
+<tr>
+	<td> Model </td>
+	<td><input type="text" name="Brand" placeholder="Enter car model"> </td>
+</tr>
+<tr>
+	<td>rentalPricePerDay</td>
+	<td><input type="text" name="rentalPricePerDay" placeholder="Enter car price for rent"> </td>
+</tr>
+<tr>
+	<td><input type="Submit" Value="Submit"> </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
